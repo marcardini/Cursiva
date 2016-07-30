@@ -111,11 +111,11 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       return this.init();
     };
     $.countdown.defaultOptions = {
-      date: "June 7, 2087 15:03:25",
+      date: "June 7, 2017 15:03:25",
       refresh: 1000,
       onEnd: $.noop,
       render: function(date) {
-        return $(this.el).html("" + date.years + " years, " + date.days + " days, " + (this.leadingZeros(date.hours)) + " hours, " + (this.leadingZeros(date.min)) + " min and " + (this.leadingZeros(date.sec)) + " sec");
+        return $(this.el).html("" + date.years + " años, " + date.days + " dias, " + (this.leadingZeros(date.hours)) + " horas, " + (this.leadingZeros(date.min)) + " min y " + (this.leadingZeros(date.sec)) + " seg");
       }
     };
     $.fn.countdown = function(options) {
